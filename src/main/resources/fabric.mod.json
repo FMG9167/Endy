@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "endy",
+  "version": "${version}",
+  "name": "Endy",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/endy/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-datagen": [
+      "io.github.FMG9167.endy.client.EndyDataGenerator"
+    ],
+    "client": [
+      "io.github.FMG9167.endy.client.EndyClient"
+    ],
+    "main": [
+      "io.github.FMG9167.endy.Endy"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
