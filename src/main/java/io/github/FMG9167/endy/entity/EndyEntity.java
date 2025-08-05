@@ -98,8 +98,8 @@ public class EndyEntity extends HostileEntity {
         this.goalSelector.add(0, new EndyAttackGoal(this, 1f, true));
         this.goalSelector.add(0, new AttackGoal(this));
         this.goalSelector.add(3, new LookAroundGoal(this));
-        this.goalSelector.add(2, new WanderAroundFarGoal(this, 1.0D));
-        this.goalSelector.add(1, new WanderAroundGoal(this, 1.0D));
+        this.goalSelector.add(2, new WanderAroundFarGoal(this, 0.5D));
+        this.goalSelector.add(1, new WanderAroundGoal(this, 0.5D));
 
         this.targetSelector.add(0, new ActiveTargetGoal<>(this, PlayerEntity.class, true));
     }
